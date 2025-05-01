@@ -22,6 +22,7 @@ function ViewerUsers() {
    //----------------------------------------------------------
 
   const getAllUsers =async()=> {
+    console.log("ESTOY EN LA LINEA 25 DE GETALLUSERS EN VIEWSERUSERS.JS")
     try {
       const response = await axios.get(`${VITE_APP_API}/user`, {
         headers: {
