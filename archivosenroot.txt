@@ -1,0 +1,3 @@
+LICENSE    archivosenroot.txt  jsconfig.json	  package.json	 src
+Procfile   dist		       node_modules	  public	 vite.config.js
+README.md  index.html	       package-lock.json  respaldo.json
