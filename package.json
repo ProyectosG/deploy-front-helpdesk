@@ -49,8 +49,7 @@
     "start": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview",
-    "postinstall": "npm install --omit=optional",
-    "test": "vitest"
+    "test": "vitest",
   },
   "eslintConfig": {
     "extends": [
