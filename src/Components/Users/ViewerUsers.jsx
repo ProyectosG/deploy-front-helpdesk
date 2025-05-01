@@ -53,9 +53,9 @@ function ViewerUsers() {
   
   return (
     <Container className = "container-fluid py-5">
-      {<Link to='/dashboard/newuser'> */}
+      <Link to='/dashboard/newuser'>
         <button>Add New User</button>  
-      </Link> */}
+      </Link> 
       
         <Table striped bordered hover size="sm" >    
           <thead className = "headerT">
