@@ -22,13 +22,13 @@ function ViewerUsers() {
    //----------------------------------------------------------
 
   const getAllUsers =async()=> {
-    console.log("ESTOY EN LA LINEA 25 DE GETALLUSERS EN VIEWSERUSERS.JS")
     try {
       const response = await axios.get(`${VITE_APP_API}/user`, {
         headers: {
             "authorization": `Bearer ${userLogged.userToken}`,
         }
         });
+        console.log("Linea 31...",response)
         if (response) {
           if (response.data.message==='El token NO es valido!') {
              navigate('/login' );    
@@ -53,9 +53,9 @@ function ViewerUsers() {
   
   return (
     <Container className = "container-fluid py-5">
-      {/* <Link to='/dashboard/newuser'> */}
+      {<Link to='/dashboard/newuser'> */}
         <button>Add New User</button>  
-      {/* </Link> */}
+      </Link> */}
       
         <Table striped bordered hover size="sm" >    
           <thead className = "headerT">
