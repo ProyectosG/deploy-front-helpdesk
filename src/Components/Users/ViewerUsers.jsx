@@ -28,7 +28,6 @@ function ViewerUsers() {
             "authorization": `Bearer ${userLogged.userToken}`,
         }
         });
-        console.log("Linea 31...",response)
         if (response) {
           if (response.data.message==='El token NO es valido!') {
              navigate('/login' );    
@@ -38,6 +37,7 @@ function ViewerUsers() {
         }
 
       const { data } = response;
+      console.log("Linea 40...",data)
       
       if (data) {
         setListUsers(data);
